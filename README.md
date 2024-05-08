@@ -1,3 +1,6 @@
+# EX 3                                           
+DATE: 27.2.2024                                                                                                                   
+                   
 # Histogram-of-an-images
 ## Aim
 To obtain a histogram for finding the frequency of pixels in an Image with pixel values ranging from 0 to 255. Also write the code using OpenCV to perform histogram equalization.
@@ -11,7 +14,6 @@ Read the gray and color image using imread()
 
 ### Step2:
 Print the image using imshow().
-
 
 
 ### Step3:
@@ -30,14 +32,10 @@ The Histogram of gray scale image and color image is shown.
 # Register Number: 212222240027
 
 
-
-
-
-
 ```
 ## Output:
 ### Input Grayscale Image and Color Image
-
+```python
  #import cv2
  #import matplotlib.pyplot as plt
  #gray_image = cv2.imread("i1")
@@ -47,9 +45,9 @@ The Histogram of gray scale image and color image is shown.
  #cv2.waitKey(0)
  #cv2.destroyAllWindows()
 
-
+```
 ### Histogram of Grayscale Image and any channel of Color Image
-
+```python
 import numpy as np
 import cv2
 Gray_image = cv2.imread("i1")
@@ -73,11 +71,11 @@ plt.ylabel("Pixel Count")
 plt.stem(color_hist)
 plt.show()
 cv2.waitKey(0)
-
+```
 
 
 ### Histogram Equalization of Grayscale Image.
-
+```python
 import cv2
 gray_image = cv2.imread("i1",0)
 cv2.imshow('Grey Scale Image',gray_image)
@@ -85,7 +83,7 @@ equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 ### Input Grayscale Image and Color Image
 
